@@ -78,8 +78,8 @@
   --bs-code-color: #ee0979;
   --bs-highlight-bg: #fff3cd;
 }
-.collapse navbar-collapse{
-    margin-left: 30px;
+nav a{
+    margin-left: 20px;
 }
 *,
 *::before,
