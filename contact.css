@@ -9,7 +9,8 @@ p{
 }
 
 nav a{
-    margin-left:20px;}
+    margin-left:20px;
+text-decoration: none;}
 #formwrap {
 	width:720px;
     margin:auto;
