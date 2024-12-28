@@ -12,6 +12,10 @@ nav a{
     margin-left: 20px;
     text-decoration: none;
 }
+.collapse navbar-collapse{
+	font-size: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+}
 table{
 	color:brown;
 	font-family: 'Verdana', sans-serif;
