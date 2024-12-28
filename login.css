@@ -15,6 +15,7 @@ nav a{
 .collapse navbar-collapse{
 	font-size: 14px;
 	font-family: Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
 }
 table{
 	color:brown;
