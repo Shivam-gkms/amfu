@@ -13,7 +13,10 @@ nav a{
 text-decoration: none;
 font-size: 14px;
 	font-family: Arial, Helvetica, sans-serif;
-	text-transform: uppercase;}
+	text-transform: uppercase;
+	font-weight: 600;
+
+}
 
 #formwrap {
 	width:720px;
