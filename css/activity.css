@@ -3130,7 +3130,14 @@ td:last-child {
  * ## main navigation
  * -------------------------------------------------------------------- */
 .s-header__nav {
-    margin-left: var(--vspace-1);
+     margin-left:20px;
+text-decoration: none;
+font-size: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	font-weight: 600;
+
+
 }
 
 .s-header__menu-links {
