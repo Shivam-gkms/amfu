@@ -92,7 +92,7 @@ h3{
 table{
 	color:yellow;
 	font-family: 'Verdana', sans-serif;
-	font-size:20px;
+	font-size:8.5px;
 }
 #advisory th {
             color:red;
@@ -141,11 +141,11 @@ table{
 .fap th {
             color: red;
              text-align: center;
-	font-size:30px;}
+	font-size:15px;}
 .fap td {
             color: yellow;
              text-align: left;
-	font-size:20px;}
+	font-size:10px;}
 img {
   max-width: 100%;
 }
