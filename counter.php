@@ -1,20 +1,15 @@
 <?php
-$counter_file = 'counter.txt';
+// counter.php
+$filename = 'counter.txt';
 
-// Check if file exists, if not create it
-if (!file_exists($counter_file)) {
-    file_put_contents($counter_file, 0);
+if (!file_exists($filename)) {
+    file_put_contents($filename, 1);
 }
 
-// Read current count
-$count = (int)file_get_contents($counter_file);
-
-// Increment count
+$count = (int)file_get_contents($filename);
 $count++;
+file_put_contents($filename, $count);
 
-// Save new count
-file_put_contents($counter_file, $count);
-
-// Return count
+header('Content-Type: text/plain');
 echo $count;
 ?>
