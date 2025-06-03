@@ -1,0 +1,447 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <link rel="stylesheet" href="css/index.css">
+	 <title>Farmer Service Portal</title>
+     
+ 
+     
+     
+ <style>  
+
+	 /*header4 starts here*/
+#wrap #header2 {
+	width: auto;
+	height: 55px;
+	margin: auto;
+	background-color: #0771DF;
+}
+#header4 #head4 {
+	width: 1140px;
+	height: 100%;
+	margin:auto;
+	padding: 0px 10px;
+	background-color:#0771DF;
+}
+#header4 #head4 #marquee {
+	width: 1136px;
+	height: 51px;
+	border: 2px solid #0771DF;
+	background-color: #FFC300 ;
+	padding: 1;
+}
+#head4 #marquee #marqp {
+	font-family: cursive;
+	color: #00008B;
+	font-weight: bold;
+	text-shadow: 1.5px .5px 1px #FFC300 ;
+	margin: 6px 0px 5px 0px;
+	font-size: 26px;
+}
+/*header4 ends here*/
+ /* Highlight styles */
+        .highlight-red {
+            color: red;
+            font-weight: bold;
+        }
+
+
+	 
+ /*transperant animation starts here */  
+ div#topcontent
+{
+    width: 980px;
+	height: 700px;
+    background:url(image/banner1.JPG) no-repeat;
+    position:relative;
+	border:1px solid #CCC;
+  
+	
+    /
+    * Chrome, Safari, Opera */
+    -webkit-animation-name: myfirst;
+    -webkit-animation-duration: 10s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 9000000s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running;
+    /* Standard syntax */
+	
+    animation-name: myfirst;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-delay: 90000000s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes myfirst {
+    0%   {background:url(image/banner1.JPG) no-repeat; left:0px; top:0px;}
+    20%  {background:url(image/banner1.JPG) no-repeat;  left:0px; top:0px;}
+    
+}
+
+/* Standard syntax */
+@keyframes myfirst {
+    0%   {background:url(image/banner1.JPG) no-repeat; left:0px; top:0px;}
+    20%  {background:url(image/banner1.JPG) no-repeat;  left:0px; top:0px;}
+    
+}
+
+</style>
+<!--transperant animation ends here-->
+
+
+
+
+<!--googleMap starts here-->
+ <script
+src="http://maps.googleapis.com/maps/api/js">
+</script>
+
+<script>
+var myCenter=new google.maps.LatLng(23.352342,90.450439453125);
+
+function initialize()
+{
+var mapProp = {
+  center: myCenter,
+  "scrollwheel": false,
+  zoom:7,
+  mapTypeId: google.maps.MapTypeId.ROADMAP
+  };
+
+var map = new google.maps.Map(document.getElementById("mainmap"),mapProp);
+
+var marker = new google.maps.Marker({
+   position: new google.maps.LatLng(21.5833,92.0167) ,
+  animation:google.maps.Animation.BOUNCE
+  });
+
+marker.setMap(map);
+
+var marker = new google.maps.Marker({
+  position: new google.maps.LatLng(24.8978,91.8714) ,
+  animation:google.maps.Animation.BOUNCE
+  });
+
+marker.setMap(map);
+
+var marker = new google.maps.Marker({
+  position: new google.maps.LatLng(22.3667,91.8000) ,
+  animation:google.maps.Animation.BOUNCE
+  });
+
+marker.setMap(map);0
+var marker = new google.maps.Marker({
+	position: new google.maps.LatLng(23.70,90.371),
+  title:'Click to zoom',
+  animation:google.maps.Animation.BOUNCE
+  });
+
+marker.setMap(map);
+// Zoom to 9 when clicking on marker
+google.maps.event.addListener(marker,'click',function() {
+  map.setZoom(8);
+  map.setCenter(marker.getPosition());
+  });
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+<!--googleMap ends here-->
+
+	<script>
+  document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+  });
+</script>
+
+
+</head>
+
+<body>
+    <!-- wrap=whole body containing div--->
+<div id="wrap">
+    <!--header=tophead(lefthead(img)+righthead(topheadmenu))+middlehead(headline+marquee)+bottomhead(mainmenu) --->
+
+	<div id="header1">
+    
+    
+    <!-- tophead starts here -->
+    <div id="tophead">
+    <div id="lefthead">
+    <div id="logodiv">
+    <img id="logo"title="Farmer Service Portal"src="image/logo.JPG" alt="Logo Image">
+    </div> <!--logodiv ends here-->
+    </div>  <!-- lefthead ends here -->   
+    <div id="righthead">
+    <div id="menudiv">
+		<ul id="topheadmenu">
+			  <li class="topheadlist"><a href="#">Please</a></li>
+			  <li class="topheadlist"><a href="#">Visit</a></li>
+			</ul>
+         
+        </div> <!--menudiv ends here-->    
+       </div>  <!-- righthead ends here -->  
+       </div>  <!---tophead ends here -->
+      </div>  <!-- header1 ends here -->   
+       
+       
+    <div id="header2">     
+      <div id="head2"> 
+        <marquee id="marquee">
+         <h1 id="marqp"><strong>FARMER SERVICE PORTAL UNDER GRAMIN KRISHI MAUSAM SEWA SCHEME, AMFU KANPUR</strong></h1>
+       </marquee>
+      </div>   
+   
+       </div>   <!--header2 ends here-->
+
+         
+     <div id="header3">
+          <div id="head3">
+      
+              <div class="mainlist">     <h3 class="mylist"><a href="index.html">HOME</a></h3>      </div>
+              <div class="mainlist">    <h3 class="mylist"><a href="about.html">ABOUT</a></h3>        </div>
+              <div class="mainlist">   <h3 class="mylist"><a href="services.html">SERVICES</a></h3>   </div>
+	      <div class="mainlist">   <h3 class="mylist"><a href="fap.html">ACTIVITIES</a></h3>   </div>
+             <div class="mainlist">     <h3 class="mylist"><a href="contact.html">CONTACT</a></h3>       </div>
+           
+                
+         </div>
+       </div>  <!--header3 ends here-->
+    
+ <div id="header4">
+          <div id="head4">
+      
+              <marquee id="marquee">
+         <h1 id="marqp"><strong> <span class="highlight-red">Chandra Shekhar Azad University of Agriculture & Technology, Kanpur-208002</span> 
+</strong></h1>
+       </marquee>
+      </div>   
+   
+       </div>   <!--header4 ends here-->
+ 
+ 
+
+ <!--content= (topcontent(contentsearch(topsearch)) + bottomcontent(leftcontent+rightcontent))starts here-->
+ <div id="content">
+     
+    <div id="topcontent"> <!--topcontent contains background image-->
+       <div id="lefttopcon">
+       
+    </div>  <!--lefttopcon ends here-->
+    
+    <div id="righttopcon">
+    <div id="righttopcondiv">
+    </div>  <!--righttopcondiv ends here-->
+    </div>  <!--righttopcon ends here-->
+    </div> <!--topcontent ends here-->
+    
+    
+    
+    
+    
+    <div id="leftcontent">
+    <div id="leftcontentdiv">
+    <div id="topdestinations">
+     <div class="contentheaddiv">
+     <h3 class="contentheadline">CSAUA&T Kanpur</h3> 
+     </div><!--contentheaddiv ends here-->
+     <div id ="destincontent">
+     <div id="destinpad">
+     <div id="destincrop">
+     <div id="destinclick">
+     <h4 id="bangladesh"><a href="#"><img src="01.jpg" alt="AMFU Kanpur" style="width:350px; height:auto; display:block; margin-bottom:10px;">
+       </a></h4>
+     </div>  <!--destinclick ends here-->
+     </div> <!--destincrop ends here-->
+     </div> <!--destinpad ends here-->
+     </div> <!--destincontent ends here-->
+
+    </div> <!--topdestinations ends here-->
+    
+ <iframe width="370" height="200" 
+    src="https://www.youtube.com/embed/videoseries?list=PLeEHd98fYDxi9-3lPf3zvvczH4Rsbk6cz" 
+    title="News Playlist" frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+</iframe>    
+    <div id="confidence">
+    <div id="confidenceheaddiv">
+     <h3 class="contentheadline">Take benifit to improve farmer income!</h3> 
+     </div><!--contentheaddiv ends here-->
+     <div id="confidencediv">
+     <div id="allconfidence">
+     
+        <div class="eachconfidence">
+        <div class="twoconfidence">
+        <div class="imgconf">
+        <img class="confimg" src="image/check.png" alt=""/>
+        </div> <!--imgconfidence ends here-->
+        <div class="contentconfidence">
+        <h5 class="confidenceheadline">Weather Forecast Service</h5>
+        <p class="confidencep">District and block level agromet advisory bulletins are being shared every Tuesday and Friday</p>
+        </div><!--contentconfidence ends here-->
+        </div> <!--twoconfidence ends here-->
+        </div> <!--eachconfidence ends here-->
+        
+        
+        <div class="eachconfidence">
+        <div class="twoconfidence">
+        <div class="imgconf">
+        <img class="confimg" src="image/check.png" alt=""/>
+        </div> <!--imgconfidence ends here-->
+        <div class="contentconfidence">
+        <h5 class="confidenceheadline">Farmer Registration</h5>
+        <p class="confidencep">Farmer can easilty register through imdagrimet.gov.in</p>
+        </div><!--contentconfidence ends here-->
+        </div> <!--twoconfidence ends here-->
+        </div> <!--eachconfidence ends here-->
+        
+        
+        <div class="eachconfidence">
+        <div class="twoconfidence">
+        <div class="imgconf">
+        <img class="confimg" src="image/check.png" alt=""/>
+        </div> <!--imgconfidence ends here-->
+        <div class="contentconfidence">
+        <h5 class="confidenceheadline">Meghdoot App</h5>
+        <p class="confidencep">Get weather/crop related infomation through app</p>
+        </div><!--contentconfidence ends here-->
+        </div> <!--twoconfidence ends here-->
+        </div> <!--eachconfidence ends here-->
+        
+        
+        <div class="eachconfidence">
+        <div class="twoconfidence">
+        <div class="imgconf">
+        <img class="confimg" src="image/check.png" alt=""/>
+        </div> <!--imgconfidence ends here-->
+        <div class="contentconfidence">
+        <h5 class="confidenceheadline">Damini app</h5>
+        <p class="confidencep">Damini app alerts farmers within 30-40 minutes of a lightning strike.</p>
+        </div><!--contentconfidence ends here-->
+        </div> <!--twoconfidence ends here-->
+        </div> <!--eachconfidence ends here-->
+        
+        
+        <div class="eachconfidence">
+        <div class="twoconfidence">
+        <div class="imgconf">
+        <img class="confimg" src="image/check.png" alt=""/>
+        </div> <!--imgconfidence ends here-->
+        <div class="contentconfidence">
+        <h5 class="confidenceheadline">Other information</h5>
+        <p class="confidencep">Short based weather forecast is sent to farmers through WhatsApp.</p>
+        </div><!--contentconfidence ends here-->
+        </div> <!--twoconfidence ends here-->
+        </div> <!--eachconfidence ends here-->
+        
+        
+        
+     </div> <!--allconfidence ends here-->
+     </div> <!--confidencediv ends here-->
+    </div> <!--confidence ends here-->
+   
+    
+    </div> <!--leftcontentdiv ends here-->
+     </div> <!--leftcontent ends here-->
+     
+     
+     
+    <div id="rightcontent">
+    <div id="rightcontentdiv">
+    <div id="lefttopcondiv">
+    <div id="contentsearch"> <!--contentsearch=topsearch(leftsearch+rightsearch)+bottomsearch(leftsearch+rightsearch)-->
+    <div id="topsearch">
+    <div id="leftsearch">
+      <img id="imgsearch"src="image/search.PNG" alt="">
+    </div> <!--leftsearch ends here-->
+    <div id="rightsearch">
+            <h2 id="searchline">Search</h2>
+
+   </div> <!--rightsearch ends here-->
+   </div> <!--topsearch ends here-->
+   <!---------- Testimonial HTML Starts --------->
+<div class="main-section">
+   <div class="container">
+      <h2 class="heading-text mt-50">Farmer Service Portal</h2>
+      <span class="heading-border"></span>
+      <marquee class="mt-50" scrollamount="12"  behavior="scroll">
+         <table>
+            <tr>
+               <td style="width:100px;">
+                  <div class="testimonial">
+                     <div class="testimonial-content"> <i class="fa fa-quote-left"></i> A well- designed farmer service portal can be a game changer, <br>
+                        offering farmers resources that assist them in making <br>
+                        informed decisions, increasing productivity, and<br>
+                        ensuring sustainable farming practices. 
+                     </div>
+                     
+               </td>
+            </tr>
+         </table>
+      </marquee>
+   </div>
+</div>
+<!---------- Testimonial HTML Ends --------->
+   
+     <div id="bottomsearch">
+    <form action="contact.php" method="get">
+    <ul id="searchlist">
+      <li id="location">
+        <label for="location">Location :</label>
+        <select name="location">
+          <option value="allhotels">Selet</option>
+          <option value="dhaka">AMFU Kanpur</option>
+              
+        
+       </li>
+       <li id="submitlist">
+         <input type="button" value="About Portal" id="submitbutton" />
+       </li>
+      <td><img src="1.jpg" width="300"  height="150" ></td>
+    </ul>
+    </form>
+   </div> <!--bottomsearch ends here-->
+    </div> <!--contentsearch ends here-->
+    </div> <!--lefttopcondiv edns here-->
+   <!--<div class="googleMap">
+    <div  class="contentheaddiv">
+        </div> <!--contentheaddiv ends here-->
+    <!--<div class="mappadd">
+    <div id="mainmap">
+    
+    </div> <!--mainmap ends here-->
+   <!-- </div> <!--mappadd ends here-->
+    <!--</div> <!--googlemap ends here-->
+    
+    <div id="popularhotels">
+    <div id="popularheaddiv">
+     <h3 class="contentheadline">Whats App Group</h3> 
+     </div><!--popularheaddiv ends here-->
+     <div id="populardiv">
+     <div id="allpopular">
+     
+       
+        <h5 class="popularheadline">Whats app Group Invite QR Code</h5>
+        <table>
+        
+        <tr>
+            <td>
+                <img src="qr.JPG" alt="WhatsApp QR Code" width="700"></tr>
+            </td>
+	 <tr><td>
+                <img src="3.PNG" width="700"  height="220" >
+            </td>
+
+                    </tr>
+    </table>
+     
+        
+</body>
+</html>
