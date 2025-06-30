@@ -30,6 +30,43 @@
     e.preventDefault();
   });
 </script>
+	<style>
+/* Submenu structure */
+.s-header__menu-links li {
+    position: relative;
+}
+
+.sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    min-width: 220px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    z-index: 999;
+}
+
+.sub-menu li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #222;
+    background-color: #fff;
+    transition: background 0.3s ease;
+}
+
+.sub-menu li a:hover {
+    background-color: #f2f2f2;
+}
+
+/* Show submenu on hover */
+.has-children:hover .sub-menu {
+    display: block;
+}</style>
 
 </head>
 
@@ -68,15 +105,22 @@
                     <a class="s-header__menu-toggle" href="#0"><span>Menu</span></a>
                 </div> <!-- end s-header__block -->
 
-                <nav class="s-header__nav">    
-                    <ul class="s-header__menu-links">
-                          <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="services.html">Services</a>
-	 <a href="fap.html">Activities</a>
-        <a href="contact.html">Contact</a>
-                    </ul> <!-- s-header__menu-links -->    
-                </nav> <!-- end s-header__nav -->
+               <nav class="s-header__nav">    
+    <ul class="s-header__menu-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+
+        <li class="has-children">
+            <a href="fap.html">Activities</a>
+            <ul class="sub-menu">
+                               <li><a href="cwc/CWC-AMFU-Kanpur.pdf" target="_blank">Crop Weather Calendar</a></li>
+            </ul>
+        </li>
+
+        <li><a href="contact.html">Contact</a></li>
+    </ul>    
+</nav>
 
             </div> <!-- end s-header__inner -->
         </header> <!-- end s-header -->
