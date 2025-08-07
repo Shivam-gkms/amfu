@@ -230,7 +230,48 @@ google.maps.event.addDomListener(window, 'load', initialize);
       
               <div class="mainlist">     <h3 class="mylist"><a href="index.html">HOME</a></h3>      </div>
               <div class="mainlist">    <h3 class="mylist"><a href="about.html">ABOUT</a></h3>        </div>
-              <div class="mainlist">   <h3 class="mylist"><a href="services.html">SERVICES</a></h3>   </div>
+             <style>
+/* Add this CSS anywhere in your <style> tags or CSS file */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 180px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 4px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+
+<!-- Modified SERVICES with dropdown -->
+<div class="mainlist dropdown">
+  <h3 class="mylist"><a href="services.html">SERVICES</a></h3>
+  <div class="dropdown-content">
+    <a href="services.html">All Services</a>
+    <a href="https://mausam.imd.gov.in/lucknow/mcdata/district_graph.pdf" target="_blank">Weather Warning</a>
+  </div>
+</div>
+
 	      <div class="mainlist">   <h3 class="mylist"><a href="fap.html">ACTIVITIES</a></h3>   </div>
              <div class="mainlist">     <h3 class="mylist"><a href="contact.html">CONTACT</a></h3>       </div>
            
