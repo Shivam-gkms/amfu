@@ -5,7 +5,8 @@
  <link rel="stylesheet" href="css/index.css">
 	 <title>Farmer Service Portal</title>
      
- <style>     
+ <style>
+
  .top-logos {
     display: flex;
     gap: 10px;
@@ -176,6 +177,28 @@ google.maps.event.addDomListener(window, 'load', initialize);
     e.preventDefault();
   });
 </script>
+<script>
+  function toggleDropdown(event) {
+    const dropdown = event.currentTarget;
+    const content = dropdown.querySelector('.dropdown-content');
+    const isOpen = content.style.display === 'block';
+
+    // Close all dropdowns
+    document.querySelectorAll('.dropdown-content').forEach(el => el.style.display = 'none');
+
+    // Toggle current one
+    if (!isOpen) {
+      content.style.display = 'block';
+    }
+
+    event.stopPropagation();
+  }
+
+  // Close dropdown when clicking outside
+  window.addEventListener('click', () => {
+    document.querySelectorAll('.dropdown-content').forEach(el => el.style.display = 'none');
+  });
+</script>
 
 
 </head>
@@ -234,38 +257,47 @@ google.maps.event.addDomListener(window, 'load', initialize);
 /* Add this CSS anywhere in your <style> tags or CSS file */
 .dropdown {
   position: relative;
-  display: inline-block;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  top: 100%;
+  left: 0;
   min-width: 180px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  z-index: 1000;
   border-radius: 4px;
 }
 
 .dropdown-content a {
-  color: black;
-  padding: 10px 16px;
-  text-decoration: none;
   display: block;
+  padding: 10px 16px;
+  color: #000;
+  text-decoration: none;
+  font-size: 14px;
 }
 
 .dropdown-content a:hover {
-  background-color: #f1f1f1;
+  background-color: #eee;
 }
 
-.dropdown:hover .dropdown-content {
-  display: block;
+/* Show dropdown on hover (for desktop only) */
+@media (hover: hover) {
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
 }
+
 </style>
 
 <!-- Modified SERVICES with dropdown -->
-<div class="mainlist dropdown">
-  <h3 class="mylist"><a href="services.html">SERVICES</a></h3>
+<div class="mainlist dropdown" onclick="toggleDropdown(event)">
+  <h3 class="mylist">
+    <a href="javascript:void(0)">SERVICES ▾</a>
+  </h3>
   <div class="dropdown-content">
     <a href="services.html">All Services</a>
     <a href="https://mausam.imd.gov.in/lucknow/mcdata/district_graph.pdf" target="_blank">Weather Warning</a>
