@@ -510,9 +510,9 @@ google.maps.event.addDomListener(window, 'load', initialize);
               
         
        </li>
-       <li id="submitlist">
-         <input type="button" value="About Portal" id="submitbutton" />
-       </li>
+      <li id="submitlist">
+  <input type="button" value="About Portal" id="submitbutton" />
+</li>
       <td><img src="1.jpg" width="300"  height="150" ></td>
     </ul>
     </form>
@@ -550,7 +550,11 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
                     </tr>
     </table>
-     
+      <script>
+  document.getElementById("submitbutton").addEventListener("click", function() {
+    window.location.href = "about.html";
+  });
+</script>
         
 </body>
 </html>
