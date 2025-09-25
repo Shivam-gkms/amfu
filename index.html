@@ -6,7 +6,7 @@
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Farmer Service Portal</title>
+        <title>Megakit - HTML5 Theme</title>
         <meta name="keywords" content="HTML5 Theme" />
         <meta name="description" content="Megakit - HTML5 Theme">
         <meta name="author" content="keenthemes.com">
@@ -411,7 +411,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 </iframe>    
     <div id="confidence">
     <div id="confidenceheaddiv">
-     <h3 class="contentheadline">Take benifit to improve farmer income!</h3> 
+     <!--<h3 class="contentheadline">Take benifit to improve farmer income!</h3> -->
      </div><!--contentheaddiv ends here-->
      <div id="confidencediv">
      <div id="allconfidence">
@@ -423,7 +423,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
         </div> <!--imgconfidence ends here-->
         <div class="contentconfidence">
         <h5 class="confidenceheadline">Weather Forecast Service</h5>
-        <p class="confidencep">District and block level agromet advisory bulletins are being shared every Tuesday and Friday</p>
+        <p class="confidencep">District and block level agromet advisory bulletins are being shared</p>
         </div><!--contentconfidence ends here-->
         </div> <!--twoconfidence ends here-->
         </div> <!--eachconfidence ends here-->
@@ -512,26 +512,61 @@ google.maps.event.addDomListener(window, 'load', initialize);
    </div> <!--topsearch ends here-->
    <!---------- Testimonial HTML Starts --------->
 <div class="main-section">
-   <div class="container">
-      <h2 class="heading-text mt-50">Farmer Service Portal</h2>
-      <span class="heading-border"></span>
-      <marquee class="mt-50" scrollamount="12"  behavior="scroll">
-         <table>
-            <tr>
-               <td style="width:100px;">
-                  <div class="testimonial">
-                     <div class="testimonial-content"> <i class="fa fa-quote-left"></i> A well- designed farmer service portal can be a game changer, <br>
-                        offering farmers resources that assist them in making <br>
-                        informed decisions, increasing productivity, and<br>
-                        ensuring sustainable farming practices. 
-                     </div>
-                     
-               </td>
-            </tr>
-         </table>
-      </marquee>
-   </div>
+  <div class="container">
+    <!-- <h2 class="heading-text mt-50">Farmer Service Portal</h2>-->
+    <span class="heading-border"></span>
+
+    <table style="width:100%;">
+      <tr>
+        <td style="width:100px;">
+          <div class="testimonial">
+            <div class="scroll-container">
+              <div class="scroll-text">
+                <div class="testimonial-content">
+                  <i class="fa fa-quote-left"></i>
+                  A well-designed farmer service portal can be a game changer, <br>
+                  offering farmers resources that assist them in making <br>
+                  informed decisions, increasing productivity, and <br>
+                  ensuring sustainable farming practices.
+                </div>
+              </div>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
 </div>
+
+<style>
+/* Scroll inside table cell */
+.scroll-container {
+  width: 300px; /* set width for visible area */
+  overflow: hidden;
+  white-space: nowrap;
+  border: none;
+  box-sizing: border-box;
+}
+
+.scroll-text {
+  display: inline-block;
+  padding-left: 100%;
+  animation: scroll-left 15s linear infinite;
+}
+
+@keyframes scroll-left {
+  0%   { transform: translateX(0%); }
+  100% { transform: translateX(-100%); }
+}
+
+.testimonial-content {
+  font-size: 16px;
+  line-height: 1.5;
+}
+</style>
+
+
+
 <!---------- Testimonial HTML Ends --------->
    
      <div id="bottomsearch">
