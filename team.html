@@ -142,16 +142,22 @@
 <script type="text/javascript" src="js/components/wow.min.js"></script>
 
 <script>
-  // Open PDF in a new tab when team image is clicked
   document.querySelectorAll('.s-team-v1').forEach(member => {
     member.addEventListener('click', () => {
       const pdfPath = member.getAttribute('data-pdf');
       if (pdfPath) {
-        window.open(pdfPath, '_blank');
+        // Trigger download so Android opens it in default PDF viewer
+        const link = document.createElement('a');
+        link.href = pdfPath;
+        link.download = pdfPath.split('/').pop(); // e.g., M.pdf
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
       }
     });
   });
 </script>
+
 
 </body>
 </html>
