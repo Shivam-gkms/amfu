@@ -1,1 +1,4 @@
-https://amfu.csauk.ac.in/robots.txt
+User-agent: *
+Allow: /
+
+Sitemap: https://amfu.csauk.ac.in/sitemap.xml
