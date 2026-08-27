@@ -780,5 +780,102 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 </script>
+		 <!-- ================= IMAGE POPUP START ================= -->
+
+<style>
+    .image-popup {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.75);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+        z-index: 99999;
+    }
+
+    .popup-box {
+        position: relative;
+        max-width: 850px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .popup-box img {
+        display: block;
+        width: auto;
+        max-width: 100%;
+        max-height: 85vh;
+        margin: auto;
+        border-radius: 10px;
+        box-shadow: 0 5px 30px rgba(0,0,0,0.5);
+    }
+
+    .popup-close {
+        position: absolute;
+        top: -15px;
+        right: -15px;
+        width: 40px;
+        height: 40px;
+        border: none;
+        border-radius: 50%;
+        background: #ffffff;
+        color: #000000;
+        font-size: 28px;
+        font-weight: bold;
+        cursor: pointer;
+        z-index: 100000;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+    }
+
+    .popup-close:hover {
+        background: #eeeeee;
+    }
+
+    @media (max-width: 600px) {
+        .popup-box img {
+            max-height: 75vh;
+        }
+
+        .popup-close {
+            width: 35px;
+            height: 35px;
+            font-size: 24px;
+            top: -10px;
+            right: -10px;
+        }
+    }
+</style>
+
+<div id="imagePopup" class="image-popup">
+
+    <div class="popup-box" onclick="event.stopPropagation();">
+
+        <!-- CLOSE BUTTON -->
+        <button class="popup-close" onclick="closeImagePopup()">
+            &times;
+        </button>
+
+        <!-- YOUR IMAGE -->
+        <img src="images/gkms.jpg"
+             alt="AMFU Notice">
+
+    </div>
+
+</div>
+
+<script>
+    function closeImagePopup() {
+        document.getElementById("imagePopup").style.display = "none";
+    }
+
+    /* Close popup when clicking outside image */
+    document.getElementById("imagePopup").addEventListener("click", function () {
+        closeImagePopup();
+    });
+</script>
+
+<!-- ================= IMAGE POPUP END ================= -->
+		 
 </body>
 </html>
