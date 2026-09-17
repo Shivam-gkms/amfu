@@ -1,9 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://amfu.csauk.ac.in/</loc>
-    <lastmod>2026-07-27</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
-  </url>
+
+    <!-- Homepage -->
+    <url>
+        <loc>https://amfu.csauk.ac.in/</loc>
+    </url>
+
+    <!-- About AMFU -->
+    <url>
+        <loc>https://amfu.csauk.ac.in/about.html</loc>
+    </url>
+
+    <!-- AMFU Services -->
+    <url>
+        <loc>https://amfu.csauk.ac.in/services.html</loc>
+    </url>
+
+    <!-- Farmer Advisory / Activities -->
+    <url>
+        <loc>https://amfu.csauk.ac.in/fap.html</loc>
+    </url>
+
+    <!-- AMFU Team -->
+    <url>
+        <loc>https://amfu.csauk.ac.in/team.html</loc>
+    </url>
+
+    <!-- Contact -->
+    <url>
+        <loc>https://amfu.csauk.ac.in/contact.html</loc>
+    </url>
+
 </urlset>
